@@ -1,9 +1,13 @@
 <style>
-  .img-container, .title { text-align: center }
+  .title { text-align: center }
  </style>
  <% if @name %>
  <h1 class=title>My name is <%= @name %></h1>
  <% end %>
- <div class='img-container'>
+ <form class='title' action='/named-cat'>
+   <input type='text' name='name'>
+   <input type='submit' value='Submit'>
+ </form>
+ <div class='title'>
    <img src='http://bit.ly/1eze8aE' style='border: 3px dashed red'>
 </div>
