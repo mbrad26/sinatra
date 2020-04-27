@@ -1,4 +1,5 @@
 require 'sinatra'
+set :session_secret, 'super secret'
 
 get '/' do
   'Hello World!'
@@ -12,4 +13,11 @@ get '/newsecret' do
   'Hello!!!'
 end
 
-:session_secret, 'super secret'
+get '/cat' do
+  "<style>
+    .img-container { text-align: center }
+   </style>
+   <div class='img-container'>
+     <img src='http://bit.ly/1eze8aE' style='border: 3px dashed red'>
+   </div>"
+end
