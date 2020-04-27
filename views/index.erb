@@ -1,7 +1,9 @@
 <style>
   .img-container, .title { text-align: center }
  </style>
- <h1 class=title>My name is <%= @random_name %></h1>
+ <% if @name %>
+ <h1 class=title>My name is <%= @name %></h1>
+ <% end %>
  <div class='img-container'>
    <img src='http://bit.ly/1eze8aE' style='border: 3px dashed red'>
 </div>
